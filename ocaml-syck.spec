@@ -32,6 +32,11 @@ developing applications that use %{name}.
 ./configure
 make OBJ=cmo LIB=cma OCAMLC=ocamlc
 make OBJ=cmx LIB=cmxa
+pushd yaml
+mkdir -p doc
+ocamldoc -colorize-code -html yamlNode.mli yamlParser.mli -d doc
+popd
+mv yaml/doc .
 
 %install
 rm -rf %{buildroot}
@@ -55,7 +60,7 @@ rm -rf %{buildroot}
 %files devel
 %defattr(-,root,root)
 %doc TODO
-#doc doc
+%doc doc
 %{_libdir}/ocaml/syck/*.a
 %{_libdir}/ocaml/syck/*.cmxa
 %{_libdir}/ocaml/syck/*.cmx
