@@ -4,7 +4,7 @@ Release:        %mkrel 1
 Summary:        Syck bindings for OCaml, allowing to read and write YAML files
 License:        MIT
 Group:          Development/Other
-URL:            http://ocaml-syck.sourceforge.net/
+URL:            https://ocaml-syck.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/ocaml-syck/ocaml-syck-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 Requires:       ocaml
