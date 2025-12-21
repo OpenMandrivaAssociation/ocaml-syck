@@ -9,6 +9,11 @@ Source0:        http://downloads.sourceforge.net/ocaml-syck/ocaml-syck-%{version
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 Requires:       ocaml
 Requires:       libsyck0
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  libsyck-devel
 BuildRequires:  ocaml-findlib
 
