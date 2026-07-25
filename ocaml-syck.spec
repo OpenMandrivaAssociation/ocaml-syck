@@ -1,6 +1,6 @@
 Name:           ocaml-syck
 Version:        0.1.1
-Release:        %mkrel 1
+Release:        2
 Summary:        Syck bindings for OCaml, allowing to read and write YAML files
 License:        MIT
 Group:          Development/Other
